@@ -7,9 +7,24 @@ import time
 # For sending SMS notifications. To configure, see Readme file
 import os
 from twilio.rest import Client
+
+# Read in credentials from a credentials.txt file. These credentials are private and should not be shared,
+# so credentials.txt should be specified in your .gitignore file and list each element in the following order
+# with no other characters, with each element being on a new line: Account SID, Auth Token, Personal phone number,
+# Twilio phone number
+f = open('credentials.txt')
+SID = str(f.readline())
+token = str(f.readline())
+deliver_number = str(f.readline())
+sender_number = str(f.readline())
+f.close()
+
+print(SID, token, deliver_number, sender_number)
+
 # Must create an account via Twilio. Upon account creation, you will be given 
 # an Account SID which is the first parameter, and a token
-client = Client("ACxxxxxxxxxxxxxx", "zzzzzzzzzzzzz")
+client = Client(SID, token)
+
 
 # Ask the client what stock they want to perform this algorithm on
 stock = input("Enter a stock ticker you would like to predict:")
@@ -43,18 +58,19 @@ while True:
         # change the "from_" number to your Twilio number and the "to" number
         # to the phone number you signed up for Twilio with, or upgrade your
         # account to send SMS to any phone number
-        client.messages.create(to="+13157508492", 
-                            from_="+12532013628", 
-                            body="----NOTICE FROM STOCK PREDICTION AI---- \n Your stock " + str(stock) + " has decreased" + str(perc_change) + " percent in the past " + str(period) + " and is predicted to keep falling. Consider SELLING now.")
+        client.messages.create(to = deliver_number, 
+                            from_ = sender_number, 
+                            body = "----NOTICE FROM STOCK PREDICTION AI---- \n Your stock " + str(stock) + " has decreased" + str(perc_change) + " percent in the past " + str(period) + " and is predicted to keep falling. Consider SELLING now.")
 
-
+        time.sleep(900)
+        continue
 
     # If the percent change is an INCREASE and 5% or more over the specified short term interval, we should 
     # consider buying. Before pulling the trigger on buying, lets put this into a Long Short Term Memory
     # machine learning model to predict an outcome. If the outcome is favorable, BUY. If the prediction 
     # shows that it may trend back down, ignore
     elif(perc_change >= 0):
-        print (stock, "has incurred a percent increse of ", perc_change, "percent over the course of", period)
+        print (stock, "has incurred a percent increase of ", perc_change, "percent over the course of", period)
 
         # Implement Long Short Term Memory algorithm
         print("Put in LSTM model to determine whether we should buy")
@@ -62,10 +78,12 @@ while True:
         # change the "from_" number to your Twilio number and the "to" number
         # to the phone number you signed up for Twilio with, or upgrade your
         # account to send SMS to any phone number
-        client.messages.create(to="+13157508492", 
-                            from_="+12532013628", 
-                            body="----NOTICE FROM STOCK PREDICTION AI---- \n Your stock " + str(stock) + " has increased " + str(perc_change) + " percent in the past " + str(period) + " and is predicted to keep rising. Consider BUYING now.")
+        client.messages.create(to = deliver_number, 
+                            from_ = sender_number, 
+                            body = "----NOTICE FROM STOCK PREDICTION AI---- \n Your stock " + str(stock) + " has increased " + str(perc_change) + " percent in the past " + str(period) + " and is predicted to keep rising. Consider BUYING now.")
 
+        time.sleep(900)
+        continue
 
     else:
         print(perc_change)
