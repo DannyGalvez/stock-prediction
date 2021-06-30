@@ -7,7 +7,7 @@ from pred_stock import pred_stock
 import logging
 
 # Configure logging format
-logging.basicConfig(filename='errors.log', filemode='w', format='%(asctime)s -%(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+logging.basicConfig(filename='errors.log', filemode='w', format='%(asctime)s -%(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.ERROR)
 
 # For sending SMS notifications. To configure, see Readme file
 import os
@@ -36,7 +36,7 @@ with open('my_stock_tickers.txt') as openfileobject:
             start_thread.start()
             print('Launched thread for ' + str(line))
         except Exception as e:
-            logging.error(f"{str(line)} - Exception thrown:", exec_info=True)
+            logging.error(f"{str(line)} - Exception thrown:", exc_info=True)
 
     
 

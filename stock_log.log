@@ -1,44 +1,225 @@
-30-Jun-21 11:17:38 -INFO - AAPL
- - 30 minutes ago this stock was: 136.7718963623047 Currently, this stock is: 136.94500732421875
-30-Jun-21 11:17:38 -INFO - AAPL
+30-Jun-21 14:19:29 -ERROR - PLUG - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'PLUG'
+30-Jun-21 14:19:29 -ERROR - DKNG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'DKNG'
+30-Jun-21 14:19:29 -INFO - GEVO
+ - 30 minutes ago this stock was: 7.210100173950195 Currently, this stock is: 7.201399803161621
+30-Jun-21 14:19:29 -ERROR - FANG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'FANG'
+30-Jun-21 14:19:29 -INFO - AAPL
+ - 30 minutes ago this stock was: 136.9250030517578 Currently, this stock is: 136.8699951171875
+30-Jun-21 14:19:29 -INFO - MRNA
+ - 30 minutes ago this stock was: 234.85000610351562 Currently, this stock is: 233.44009399414062
+30-Jun-21 14:19:29 -INFO - GEVO
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:17:38 -INFO - MRNA
- - 30 minutes ago this stock was: 237.90499877929688 Currently, this stock is: 236.61000061035156
-30-Jun-21 11:17:38 -INFO - MRNA
+30-Jun-21 14:19:29 -INFO - AAPL
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:17:38 -INFO - DKNG
- - 30 minutes ago this stock was: 52.2400016784668 Currently, this stock is: 52.32569885253906
-30-Jun-21 11:17:38 -INFO - DKNG
+30-Jun-21 14:19:29 -INFO - MRNA
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:17:38 -INFO - GEVO
- - 30 minutes ago this stock was: 7.210000038146973 Currently, this stock is: 7.269899845123291
-30-Jun-21 11:17:38 -INFO - GEVO
+30-Jun-21 14:21:29 -INFO - DKNG
+ - 30 minutes ago this stock was: 52.060001373291016 Currently, this stock is: 52.21500015258789
+30-Jun-21 14:21:29 -INFO - DKNG
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:19:38 -INFO - DKNG
- - 30 minutes ago this stock was: 52.38010025024414 Currently, this stock is: 52.33000183105469
-30-Jun-21 11:19:38 -INFO - DKNG
+30-Jun-21 14:21:29 -ERROR - FANG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'FANG'
+30-Jun-21 14:21:29 -ERROR - PLUG - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'PLUG'
+30-Jun-21 14:21:29 -ERROR - MRNA
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'MRNA'
+30-Jun-21 14:21:29 -ERROR - GEVO
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'GEVO'
+30-Jun-21 14:21:29 -ERROR - AAPL
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'AAPL'
+30-Jun-21 14:23:30 -ERROR - PLUG - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'PLUG'
+30-Jun-21 14:23:30 -ERROR - GEVO
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'GEVO'
+30-Jun-21 14:23:30 -ERROR - AAPL
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'AAPL'
+30-Jun-21 14:23:30 -INFO - DKNG
+ - 30 minutes ago this stock was: 52.06999969482422 Currently, this stock is: 52.18000030517578
+30-Jun-21 14:23:30 -INFO - MRNA
+ - 30 minutes ago this stock was: 234.8679962158203 Currently, this stock is: 233.49000549316406
+30-Jun-21 14:23:30 -INFO - DKNG
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:19:38 -INFO - MRNA
- - 30 minutes ago this stock was: 238.1750030517578 Currently, this stock is: 237.0780029296875
-30-Jun-21 11:19:38 -INFO - GEVO
- - 30 minutes ago this stock was: 7.210000038146973 Currently, this stock is: 7.250999927520752
-30-Jun-21 11:19:38 -INFO - MRNA
+30-Jun-21 14:23:30 -INFO - FANG
+ - 30 minutes ago this stock was: 93.01000213623047 Currently, this stock is: 93.38999938964844
+30-Jun-21 14:23:30 -INFO - MRNA
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:19:38 -INFO - AAPL
- - 30 minutes ago this stock was: 137.03500366210938 Currently, this stock is: 136.91000366210938
-30-Jun-21 11:19:38 -INFO - GEVO
+30-Jun-21 14:23:30 -INFO - FANG
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:19:38 -INFO - AAPL
+30-Jun-21 14:25:30 -INFO - AAPL
+ - 30 minutes ago this stock was: 136.98500061035156 Currently, this stock is: 136.7949981689453
+30-Jun-21 14:25:30 -INFO - AAPL
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:21:39 -INFO - AAPL
- - 30 minutes ago this stock was: 137.03500366210938 Currently, this stock is: 136.875
-30-Jun-21 11:21:39 -INFO - AAPL
+30-Jun-21 14:25:30 -ERROR - FANG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'FANG'
+30-Jun-21 14:25:30 -ERROR - DKNG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'DKNG'
+30-Jun-21 14:25:30 -ERROR - GEVO
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'GEVO'
+30-Jun-21 14:25:30 -INFO - PLUG - 30 minutes ago this stock was: 34.36000061035156 Currently, this stock is: 34.25910186767578
+30-Jun-21 14:25:30 -INFO - PLUG - No notable changes. Will try again in two minutes. Going to sleep.....
+30-Jun-21 14:25:30 -INFO - MRNA
+ - 30 minutes ago this stock was: 234.8679962158203 Currently, this stock is: 232.89999389648438
+30-Jun-21 14:25:30 -INFO - MRNA
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:21:39 -INFO - GEVO
- - 30 minutes ago this stock was: 7.210000038146973 Currently, this stock is: 7.275000095367432
-30-Jun-21 11:21:39 -INFO - GEVO
+30-Jun-21 14:27:31 -ERROR - FANG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'FANG'
+30-Jun-21 14:27:31 -ERROR - PLUG - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'PLUG'
+30-Jun-21 14:27:31 -INFO - MRNA
+ - 30 minutes ago this stock was: 234.8679962158203 Currently, this stock is: 232.87559509277344
+30-Jun-21 14:27:31 -INFO - MRNA
  - No notable changes. Will try again in two minutes. Going to sleep.....
-30-Jun-21 11:21:39 -INFO - MRNA
- - 30 minutes ago this stock was: 238.1750030517578 Currently, this stock is: 237.4499969482422
-30-Jun-21 11:21:39 -INFO - MRNA
+30-Jun-21 14:27:31 -ERROR - DKNG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'DKNG'
+30-Jun-21 14:27:31 -ERROR - GEVO
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'GEVO'
+30-Jun-21 14:27:31 -INFO - AAPL
+ - 30 minutes ago this stock was: 136.98500061035156 Currently, this stock is: 136.86500549316406
+30-Jun-21 14:27:31 -INFO - AAPL
+ - No notable changes. Will try again in two minutes. Going to sleep.....
+30-Jun-21 14:29:31 -INFO - GEVO
+ - 30 minutes ago this stock was: 7.175000190734863 Currently, this stock is: 7.210000038146973
+30-Jun-21 14:29:31 -INFO - GEVO
+ - No notable changes. Will try again in two minutes. Going to sleep.....
+30-Jun-21 14:29:31 -ERROR - PLUG - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'PLUG'
+30-Jun-21 14:29:31 -ERROR - FANG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'FANG'
+30-Jun-21 14:29:31 -INFO - MRNA
+ - 30 minutes ago this stock was: 234.50999450683594 Currently, this stock is: 232.6999969482422
+30-Jun-21 14:29:31 -ERROR - DKNG
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'DKNG'
+30-Jun-21 14:29:31 -ERROR - AAPL
+ - Exception thrown:
+Traceback (most recent call last):
+  File "/Users/danielgalvez/Google Drive/Freelance/Stock AI/stock-prediction/pred_stock.py", line 43, in run
+    data = yf.download(tickers= stock, period= period, interval= interval)
+  File "/Users/danielgalvez/opt/anaconda3/lib/python3.8/site-packages/yfinance/multi.py", line 120, in download
+    return shared._DFS[tickers[0]]
+KeyError: 'AAPL'
+30-Jun-21 14:29:31 -INFO - MRNA
  - No notable changes. Will try again in two minutes. Going to sleep.....
