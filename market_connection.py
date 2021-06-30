@@ -4,6 +4,10 @@ import pandas as pd
 import yfinance as yf
 import time
 from pred_stock import pred_stock
+import logging
+
+# Configure logging format
+logging.basicConfig(filename='errors.log', filemode='w', format='%(asctime)s -%(levelname)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 # For sending SMS notifications. To configure, see Readme file
 import os
@@ -27,9 +31,12 @@ print(SID, token, deliver_number, sender_number)
 # for each stock ticker in the file and a thread will be launched to predict the data.
 with open('my_stock_tickers.txt') as openfileobject:
     for line in openfileobject:
-        start_thread = pred_stock(SID, token, deliver_number, sender_number, str(line))
-        start_thread.start()
-        print('Launched thread for ' + str(line))
+        try:
+            start_thread = pred_stock(SID, token, deliver_number, sender_number, str(line))
+            start_thread.start()
+            print('Launched thread for ' + str(line))
+        except Exception as e:
+            logging.error(f"{str(line)} - Exception thrown:", exec_info=True)
 
     
 
